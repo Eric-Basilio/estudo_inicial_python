@@ -5,7 +5,7 @@ def isPalindrome(str):
     
     # vefifica se na str tem algum caracter na lista e troca ele por ''
     ## detalhe: se na palavra tiver um espaço vazio, ele não está na lista, então permanece lá.
-    str=''.join(ch for ch in str if str not in exclude)
+    str=''.join(ch for ch in str if ch not in exclude)
     
     # troca os espaços vazios por nada
     str=str.replace(" ", "").lower()
